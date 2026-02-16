@@ -263,3 +263,79 @@ locate apache2.conf
 sudo updatedb
 
 ---
+
+## 🛠️ File & Directory Management
+
+### Create files and folders
+
+---
+
+touch notes.txt
+mkdir projects
+
+---
+
+### Copy & Move
+
+---
+
+cp file.txt backup.txt
+mv file.txt Documents/
+
+---
+
+### Delete (careful 😭)
+
+---
+
+rm file.txt
+rm -r folder/
+
+---
+
+## 📊 Processes & System Info
+
+```ps``` — Show running processes
+
+---
+
+ps
+
+---
+
+```date``` — System time
+
+---
+
+date
+
+---
+
+## 🧠 Key Concepts Learned
+
+- The shell interprets commands
+
+- Terminal emulators only provide access to the shell
+
+- Linux uses a single unified filesystem tree
+
+- Command history improves efficiency
+
+- Cursor movement allows fast command editing
+
+- Core commands enable navigation, searching, and file management
+
+- Understanding user context is critical for permissions and security
+
+## 🧪 Mini Project: User Permission Lab 🔐
+
+***Goal:*** create isolated users with secure home directories.
+
+### Step 1: Become Root
+
+---
+
+sudo su
+
+---
+
