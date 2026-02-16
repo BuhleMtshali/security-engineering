@@ -339,3 +339,68 @@ sudo su
 
 ---
 
+### Step 2: Create User
+
+---
+
+useradd -m alice
+
+---
+
+- ```-m``` creates ```/home/alice```
+
+### Step 3: Set Password
+
+---
+
+passwd alice
+
+---
+
+### Step 4: Restrict Access
+
+---
+
+chmod 700 /home/alice
+
+---
+
+- Only Alice can access her files 🔒
+
+## 🎭 Understanding $ vs # Prompts
+
+- After:
+
+---
+
+su - cindy
+
+---
+
+- You’ll see:
+
+```$```
+
+- Meaning:
+
+```$``` → normal user
+
+```#``` → root user (admin power mode 💥)
+
+You didn’t break anything. Linux just changed your role 😌
+
+- To switch from a different shell (like zsh, sh, or a Windows command prompt) to Bash, or to start a Bash shell, you can use the following command:
+
+---
+
+bash
+
+---
+
+- To change Your Default Shell to Bash (Permanent):
+
+---
+
+chsh -s /bin/bash
+
+---
