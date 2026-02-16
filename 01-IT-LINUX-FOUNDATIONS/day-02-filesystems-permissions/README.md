@@ -404,3 +404,27 @@ bash
 chsh -s /bin/bash
 
 ---
+
+## 🚪 Logging Out of Another User
+
+---
+
+exit
+
+---
+
+- Returns to previous user session.
+
+- Simple. Clean. No drama 🎤
+
+## 🏁 Final Thoughts
+
+- Today unlocked the real Linux experience.
+
+- Not clicking. Not guessing. But commanding the system directly like a calm, collected tech wizard 🧙🏽‍♀️✨
+
+### Day 1 was “what is a computer doing internally?”
+
+### Day 2 is “cool… now I control it.” 😌🔥
+
+*** We are officially entering terminal main character energy now.***
