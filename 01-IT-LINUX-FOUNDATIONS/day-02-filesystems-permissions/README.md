@@ -40,11 +40,11 @@
 
     - 🧩 terminator
 
----
+```
 
 ***💡 Truth bomb: they all do the same core job → give access to the shell.***
 
----
+```
 
 - They don’t execute commands.
 
@@ -52,11 +52,11 @@
 
 ## Mental Flow of a Command
 
----
+```
 
 You → Terminal Emulator → Shell → OS → Output → Terminal → You
 
----
+```
 
 - The terminal is just the messenger 📨
 
@@ -95,13 +95,13 @@ You → Terminal Emulator → Shell → OS → Output → Terminal → You
 
 - Example:
 
----
+```
 
 /home/buhle/Documents
 /etc
 /var/log
 
----
+```
 
 - No chaos. No random drive letters changing moods daily 😭
 
@@ -131,13 +131,13 @@ You → Terminal Emulator → Shell → OS → Output → Terminal → You
 
 - Example:
 
----
+```
 
 ls
 cd /var/log
 cat syslog
 
----
+```
 
 - Press ⬆️ to scroll through these commands like a time machine ⏳
 
@@ -147,11 +147,11 @@ cat syslog
 
 - Example mistake:
 
----
+```
 
 cat /var/log/sysolg
 
----
+```
 
 - Fix:
 
@@ -163,26 +163,27 @@ cat /var/log/sysolg
 
 - Efficiency level: hacker montage energy 🎬💻
 
-## 🧪 Essential Linux Commands (With Examples)
+# 🧪 Essential Linux Commands (With Examples)
 
-### 📍 Navigation & Identity
+## 📍 Navigation & Identity
 
-```pwd``` — Where am I?
+### ```pwd``` — Where am I?
 
----
+```
+
 pwd
 
----
+```
 
 - Shows current directory.
 
-```whoami``` — Who am I?
+### ```whoami``` — Who am I?
 
----
+```
 
 whoami
 
----
+```
 
 - Displays current user (important for permissions 🔐)
 
@@ -190,23 +191,23 @@ whoami
 
 ### ls — List files
 
----
+```
 
 ls
 ls -l   # detailed view
 ls -a   # include hidden files
 
----
+```
 
-```cd``` — Change directory
+### ```cd``` — Change directory
 
----
+```
 
 cd Documents
 cd ..
 cd /
 
----
+```
 
 - .. moves up one level in the directory tree 🌳
 
@@ -214,102 +215,102 @@ cd /
 
 ```cat``` — Show file contents
 
----
+```
 
 cat file.txt
 
----
+```
 
-```less``` — Scroll through files
+### ```less``` — Scroll through files
 
----
+```
 
 less /etc/apache2/apache2.conf
 
----
+```
 
-```head``` & ```tail```
+### ```head``` & ```tail```
 
----
+```
 
 head -20 file.txt
 tail -20 file.txt
 
----
+```
 
 ## 🔎 Searching & Filtering
 
 ```grep``` — Find specific text
 
----
+```
 
 cat file.txt | grep password
 
----
+```
 
 ```find``` — Search by exact name
 
----
+```
 
 find / -name config.txt
 
----
+```
 
 ```locate``` — Fast file search
 
----
+```
 
 locate apache2.conf
 sudo updatedb
 
----
+```
 
 ## 🛠️ File & Directory Management
 
 ### Create files and folders
 
----
+```
 
 touch notes.txt
 mkdir projects
 
----
+```
 
 ### Copy & Move
 
----
+```
 
 cp file.txt backup.txt
 mv file.txt Documents/
 
----
+```
 
 ### Delete (careful 😭)
 
----
+```
 
 rm file.txt
 rm -r folder/
 
----
+```
 
 ## 📊 Processes & System Info
 
 ```ps``` — Show running processes
 
----
+```
 
 ps
 
----
+```
 
-```date``` — System time
+### ```date``` — System time
 
----
+```
 
 date
 
----
+```
 
 ## 🧠 Key Concepts Learned
 
@@ -333,37 +334,37 @@ date
 
 ### Step 1: Become Root
 
----
+```
 
 sudo su
 
----
+```
 
 ### Step 2: Create User
 
----
+```
 
 useradd -m alice
 
----
+```
 
 - ```-m``` creates ```/home/alice```
 
 ### Step 3: Set Password
 
----
+```
 
 passwd alice
 
----
+```
 
 ### Step 4: Restrict Access
 
----
+```
 
 chmod 700 /home/alice
 
----
+```
 
 - Only Alice can access her files 🔒
 
@@ -371,11 +372,11 @@ chmod 700 /home/alice
 
 - After:
 
----
+```
 
 su - cindy
 
----
+```
 
 - You’ll see:
 
@@ -391,27 +392,27 @@ You didn’t break anything. Linux just changed your role 😌
 
 - To switch from a different shell (like zsh, sh, or a Windows command prompt) to Bash, or to start a Bash shell, you can use the following command:
 
----
+```
 
 bash
 
----
+```
 
 - To change Your Default Shell to Bash (Permanent):
 
----
+```
 
 chsh -s /bin/bash
 
----
+```
 
 ## 🚪 Logging Out of Another User
 
----
+```
 
 exit
 
----
+```
 
 - Returns to previous user session.
 
