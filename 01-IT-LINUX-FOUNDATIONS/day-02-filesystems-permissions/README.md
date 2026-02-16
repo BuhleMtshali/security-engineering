@@ -162,3 +162,104 @@ cat /var/log/sysolg
     - Press Enter 😌✨
 
 - Efficiency level: hacker montage energy 🎬💻
+
+## 🧪 Essential Linux Commands (With Examples)
+
+### 📍 Navigation & Identity
+
+```pwd``` — Where am I?
+
+---
+pwd
+
+---
+
+- Shows current directory.
+
+```whoami``` — Who am I?
+
+---
+
+whoami
+
+---
+
+- Displays current user (important for permissions 🔐)
+
+## 📂 Listing & Moving Around
+
+### ls — List files
+
+---
+
+ls
+ls -l   # detailed view
+ls -a   # include hidden files
+
+---
+
+```cd``` — Change directory
+
+---
+
+cd Documents
+cd ..
+cd /
+
+---
+
+- .. moves up one level in the directory tree 🌳
+
+## 📄 Viewing Files
+
+```cat``` — Show file contents
+
+---
+
+cat file.txt
+
+---
+
+```less``` — Scroll through files
+
+---
+
+less /etc/apache2/apache2.conf
+
+---
+
+```head``` & ```tail```
+
+---
+
+head -20 file.txt
+tail -20 file.txt
+
+---
+
+## 🔎 Searching & Filtering
+
+```grep``` — Find specific text
+
+---
+
+cat file.txt | grep password
+
+---
+
+```find``` — Search by exact name
+
+---
+
+find / -name config.txt
+
+---
+
+```locate``` — Fast file search
+
+---
+
+locate apache2.conf
+sudo updatedb
+
+---
