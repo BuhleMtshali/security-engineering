@@ -228,3 +228,55 @@ touch notes.txt
 ```
 
 ### Write to a File
+
+```
+cat > hackingskills
+
+```
+- Press ```CTRL+D``` to save & exit
+
+### Append to File
+
+```
+cat >> hackingskills
+
+```
+
+## 📂 Managing Directories
+
+```
+
+mkdir projects
+cd projects
+cp file.txt backup.txt
+mv file.txt newname.txt
+rmdir emptydir
+rm -r folder
+
+```
+
+- ⚠️ ```rm -r``` = dangerous
+
+- Deletes EVERYTHING recursively 😭💣
+
+## 📖 Viewing File Content Like a Hacker
+
+```
+head -20 file.txt
+tail -20 file.txt
+nl file.txt
+more file.txt
+less file.txt
+
+```
+- ```less > more```
+
+- Because you can scroll AND search 🔍
+
+## 🔐 Password Attacks Concepts
+
+### Dictionary Attack
+
+Trying common passwords from a list 📚
+
+Example wordlist:
