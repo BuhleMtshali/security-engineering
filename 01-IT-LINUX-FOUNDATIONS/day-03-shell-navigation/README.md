@@ -277,6 +277,24 @@ less file.txt
 
 ### Dictionary Attack
 
-Trying common passwords from a list 📚
+- Trying common passwords from a list 📚
 
-Example wordlist:
+- Example wordlist:
+
+```
+head /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt
+
+```
+
+## Munging
+
+- Turning simple words into “strong” passwords:
+
+```
+iloveyou → il0vey0u
+password → p@ssw0rd
+
+```
+- Attackers know this trick too 👀
+
+## 🧪 Command Help System
