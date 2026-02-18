@@ -298,3 +298,28 @@ password → p@ssw0rd
 - Attackers know this trick too 👀
 
 ## 🧪 Command Help System
+
+```
+man nmap
+nmap -h
+aircrack-ng --help
+
+```
+
+- If you don’t read help pages… Linux will humble you very fast 😭
+
+## 🧠 Key Concepts Learned Today
+
+- Linux is the backbone of cybersecurity tools
+
+- File navigation is critical for system investigation
+
+- Permissions determine who can access what
+
+- find, locate, and grep are essential for threat hunting
+
+- Piping connects commands into powerful workflows
+
+- Password cracking relies on wordlists & human behavior patterns
+
+- Help manuals (man) are your survival guide
