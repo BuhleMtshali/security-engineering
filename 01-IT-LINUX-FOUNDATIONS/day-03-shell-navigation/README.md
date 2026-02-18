@@ -337,3 +337,27 @@ guide
 
 ![alt text](image-1.png)
 
+## 3️⃣ Filter Only Modules
+
+![alt text](image-2.png)
+
+## 4️⃣ Locate Metasploit Wordlist
+
+![alt text](image-3.png)
+
+## 🧩 Full Practice Lab
+
+![alt text](image-4.png)
+
+
+## 🏁 Final Thoughts
+
+- Today felt like unlocking the toolbelt of a future Security Data Engineer 🛡️📊
+
+- Not hacking randomly… but understanding how attackers and defenders actually interact with Linux systems.
+
+- We’re not just learning commands.
+
+- We’re learning control.
+
+- Precision. Observation. Investigation.
