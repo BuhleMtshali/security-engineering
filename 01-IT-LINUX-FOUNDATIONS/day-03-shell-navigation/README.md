@@ -323,3 +323,15 @@ aircrack-ng --help
 - Password cracking relies on wordlists & human behavior patterns
 
 - Help manuals (man) are your survival guide
+
+guide
+
+
+# 🧪 Mini Practice Lab
+
+## 1️⃣ Find Apache Config Files
+
+![alt text](image.png)
+
+## 2️⃣ Check if Apache is Running
+
