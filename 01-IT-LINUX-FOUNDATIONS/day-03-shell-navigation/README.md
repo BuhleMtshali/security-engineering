@@ -335,3 +335,5 @@ guide
 
 ## 2️⃣ Check if Apache is Running
 
+![alt text](image-1.png)
+
