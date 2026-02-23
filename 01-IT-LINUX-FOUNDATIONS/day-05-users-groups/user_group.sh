@@ -1,2 +1,2 @@
-echo "CREATING USER & GROUPS"
+echo "===== CREATING USERS & GROUPS ===="
 
