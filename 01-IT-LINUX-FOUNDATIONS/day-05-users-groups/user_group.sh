@@ -1,22 +1,37 @@
-echo "===== CREATING USERS & GROUPS ===="
+#!/bin/bash
 
+echo "===== CREATING USERS & GROUPS ====="
 
-#1. FIRST CREATING A GOUP
-sudo groupadd developers
+# 1️⃣ Create group only if it doesn't exist
+if ! getent group developers > /dev/null; then
+    sudo groupadd developers
+    echo "Group 'developers' created"
+else
+    echo "Group 'developers' already exists"
+fi
 
-#2. Verifying if the group was created
-tail /etc/group
+# 2️⃣ Verify group
+getent group developers
 
-#3. CREATING USER
-sudo useradd -m analyst
-echo "analyst:analyst123" | sudo chpasswd
+# 3️⃣ Create user only if not exists
+if ! id "analyst" &>/dev/null; then
+    sudo useradd -m analyst
+    echo "User 'analyst' created"
+
+    # Secure password prompt instead of hardcoding
+    sudo passwd analyst
+else
+    echo "User 'analyst' already exists"
+fi
+
+# 4️⃣ Create secure logs directory
 sudo mkdir -p /logs
 sudo chmod 700 /logs
 
 echo "✅ Environment Ready"
 
-#4. Adding user to to the group
+# 5️⃣ Add user to group
 sudo usermod -aG developers analyst
 
-#4. verifying if the user was added
+# 6️⃣ Verify membership
 groups analyst
