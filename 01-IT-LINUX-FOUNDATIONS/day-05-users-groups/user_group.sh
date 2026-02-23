@@ -14,3 +14,9 @@ sudo mkdir -p /logs
 sudo chmod 700 /logs
 
 echo "✅ Environment Ready"
+
+#4. Adding user to to the group
+sudo usermod -aG developers analyst
+
+#4. verifying if the user was added
+groups analyst
