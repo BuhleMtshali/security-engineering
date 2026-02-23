@@ -10,3 +10,7 @@ tail /etc/group
 #3. CREATING USER
 sudo useradd -m analyst
 echo "analyst:analyst123" | sudo chpasswd
+sudo mkdir -p /logs
+sudo chmod 700 /logs
+
+echo "✅ Environment Ready"
