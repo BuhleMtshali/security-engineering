@@ -1,1 +1,1 @@
-echo "test word"
+echo "CREATING USER & GROUPS"
