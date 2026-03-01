@@ -201,3 +201,27 @@ All internet traffic exits through the VM gateway 🚪➡️🌍
 - The default route is the main exit point from the local network to the internet.
 
 - No gateway = no internet. Simple as that 😭
+
+# 💻 Code Snippet
+
+```
+
+#!/bin/bash
+
+echo "===== NETWORK SNAPSHOT REPORT ====="
+
+echo "🔍 Checking Connectivity..."
+ping -c 5 google.com
+
+echo "🛰️ Tracing Route..."
+traceroute google.com
+
+echo "🧩 Displaying IP Configuration..."
+ip address show
+
+echo "🚪 Showing Routing Table..."
+ip route show
+
+echo "✅ Network Snapshot Complete"
+
+```
