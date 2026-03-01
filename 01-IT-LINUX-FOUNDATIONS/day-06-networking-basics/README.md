@@ -59,3 +59,21 @@ ping -c 10 google.com
 
 ![alt text](image.png)
 
+
+## 🔎 Result Summary:
+
+- Packets sent: 10
+
+- Packets received: 10
+
+- Packet loss: 0% 🎯
+
+- Avg latency: ~26 ms ⚡
+
+## 🧠 Interpretation:
+
+- My machine successfully communicated with Google’s server with zero packet loss, meaning:
+
+- Internet connection is stable and responsive 🌐💨
+
+- Latency around 20–40 ms = healthy connection (especially solid for VM networking).
