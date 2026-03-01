@@ -25,3 +25,37 @@ ip address show
 ip route show
 
 ```
+
+### This script collects:
+
+- Connectivity status 🌍
+
+- Route path to a remote host 🛰️
+
+- Local IP configuration 🧩
+
+- Routing table (how packets leave my machine) 🚪➡️🌐
+
+# 🛰️ Command Breakdown (Simple + Real Talk)
+
+| Tool              | What It Does                       | Why It Matters                         |
+| ----------------- | ---------------------------------- | -------------------------------------- |
+| `ping`            | Sends packets to test connectivity | Checks if the internet is reachable    |
+| `traceroute`      | Shows the path packets take        | Helps diagnose network slowdowns       |
+| `ip address show` | Displays network interfaces & IPs  | Identifies my machine on the network   |
+| `ip route show`   | Shows routing table                | Reveals default gateway & traffic flow |
+
+
+# 📊 Network Snapshot Results & Analysis
+
+## 1️⃣ Ping Test (Connectivity Check)
+
+```
+ping -c 10 google.com
+
+```
+
+## 🎥 Screenshot 
+
+![alt text](image.png)
+
