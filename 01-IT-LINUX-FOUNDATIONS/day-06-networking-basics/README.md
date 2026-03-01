@@ -89,3 +89,21 @@ traceroute google.com
 ## 🎥 Screenshot 
 
 ![alt text](image-1.png)
+
+### 🛣️ Observed Route Highlights:
+
+- ```192.168.64.1``` → Local VM gateway
+
+- ```192.168.1.1``` → Home router
+
+- ```41.x.x.x →``` ISP network (Vox Telecom)
+
+- ```1e100.net``` → Google infrastructure
+
+### 🧠 Interpretation:
+
+- This shows the journey of packets from my Kali VM ➜ router ➜ ISP ➜ Google.
+
+- Those ```* * *``` hops?
+
+- They’re routers that block ICMP replies. Not an error. Just security vibes 🔒
