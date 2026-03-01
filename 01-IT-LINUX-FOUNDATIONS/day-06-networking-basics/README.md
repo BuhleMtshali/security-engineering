@@ -225,3 +225,48 @@ ip route show
 echo "✅ Network Snapshot Complete"
 
 ```
+
+## ⚠️ Challenges Experienced
+
+- Running ```traceroute -T``` required elevated privileges 🔐
+
+- VM networking adds an extra NAT layer, which can slightly affect latency
+
+- Some hops returned ```* * *``` due to ICMP filtering (normal behavior)
+
+## 🧠 What This Project Taught Me
+
+- This exercise made me realize:
+
+    - The internet isn’t magic. It’s just packets hopping router to router like gossip spreading in a group chat 📲💬
+
+- I can now:
+
+    - Diagnose connectivity issues
+
+    - Identify routing paths
+
+    - Understand how my VM communicates with the outside network
+
+    - Read and interpret routing tables like a baby network analyst 🍼📡
+
+
+## 🔗 Resources Used
+
+- Linux man pages (man ping, man traceroute, man ip)
+
+- The Linux Command Line (3rd Edition)
+
+- Kali Linux VM (UTM)
+
+## 🏁 Final Thoughts
+
+- Today felt like putting on X-ray glasses for networking 👓🌐
+
+- Instead of blindly trusting “Wi-Fi is working”, I can now prove it, trace it, and analyze it.
+
+- We’re not just using the internet anymore…
+
+- we’re understanding its heartbeat 💓📡
+
+- Day 6 complete. On to deeper network wizardry next 🧙🏽‍♀️💻🔥
