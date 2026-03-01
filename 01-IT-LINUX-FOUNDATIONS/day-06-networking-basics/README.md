@@ -142,3 +142,22 @@ ip address show
 My VM lives inside its own little digital apartment 🏢 and talks to the outside world through the host network.
 
 ---
+
+# 4️⃣ Routing Table Analysis
+
+```
+ip route show
+
+```
+
+## 🎥 Screenshot
+
+![alt text](image-3.png)
+
+## 🔎 Output Insight:
+
+```
+
+default via 192.168.64.1 dev eth0
+
+```
