@@ -107,3 +107,38 @@ traceroute google.com
 - Those ```* * *``` hops?
 
 - They’re routers that block ICMP replies. Not an error. Just security vibes 🔒
+
+# 3️⃣ IP Address Inspection
+
+```
+ip address show
+
+```
+
+## 🎥 Screenshot
+
+![alt text](image-2.png)
+
+## 🔎 Key Findings:
+
+- Interface: ```eth0```
+
+- Local IP: ```192.168.64.2/24```
+
+- Loopback: 127.0.0.1
+
+## 🧠 Interpretation:
+
+- ```192.168.64.2``` → My VM’s private IP
+
+- Loopback → Used for internal system communication
+
+- Indicates NAT networking inside the virtual machine
+
+- Basically:
+
+---
+
+My VM lives inside its own little digital apartment 🏢 and talks to the outside world through the host network.
+
+---
