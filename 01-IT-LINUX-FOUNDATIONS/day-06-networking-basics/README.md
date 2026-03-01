@@ -77,3 +77,15 @@ ping -c 10 google.com
 - Internet connection is stable and responsive 🌐💨
 
 - Latency around 20–40 ms = healthy connection (especially solid for VM networking).
+
+# 2️⃣ Traceroute (Path to Destination)
+
+```
+
+traceroute google.com
+
+```
+
+## 🎥 Screenshot 
+
+![alt text](image-1.png)
