@@ -197,3 +197,38 @@ ls ~/.ssh
         - known_hosts
 
         - authorized_keys
+
+
+## 🛠 Step 2: Check If You Have SSH Keys
+
+```
+ls ~/.ssh/id_*
+
+```
+
+### 🎥 Screenshot
+
+![alt text](image-1.png)
+
+- Since it says "No such file", I need to generate one
+
+## 🔑 Step 3: Generate SSH Key && Troubleshooting
+
+- Attempted connection to 192.168.1.10 resulted in:
+
+```
+Connection timed out
+
+```
+
+- Diagnosis:
+
+    - IP address not reachable on local network
+
+- Resolution:
+
+    - Tested with localhost to confirm configuration works
+
+    - Verified SSH service is running
+
+- Recruiters LOVE seeing troubleshooting sections. 
