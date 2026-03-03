@@ -232,3 +232,74 @@ Connection timed out
     - Verified SSH service is running
 
 - Recruiters LOVE seeing troubleshooting sections. 
+
+## 🧾 Step 2: Add a Host Entry
+
+- Open the file:
+
+```
+
+nano ~/.ssh/config
+
+```
+- Add host configuration:
+
+```
+Host myserver
+    HostName 192.168.1.10
+    User buhle
+    Port 2222
+    IdentityFile ~/.ssh/id_rsa
+
+```
+### 🎥 Screenshot
+
+![alt text](image-2.png)
+
+- Let’s decode that:
+
+| Line         | Meaning                |
+| ------------ | ---------------------- |
+| Host         | Alias name you’ll type |
+| HostName     | Real IP or domain      |
+| User         | Default login user     |
+| Port         | Custom SSH port        |
+| IdentityFile | Private key to use     |
+
+- Save. Exit.
+
+## 🚀 Step 3: Test It
+
+- Now instead of:
+
+```
+ssh buhle@192.168.1.10 -p 2222
+
+```
+
+- You type:
+
+```
+ssh myserver
+
+```
+
+- And boom!
+
+## 🧠 Key Learnings
+
+- SSH config simplifies command usage
+
+- Proper file permissions are critical
+
+- Multiple hosts can be managed cleanly
+
+- Improves workflow efficiency
+
+## 🔐 Security Considerations
+
+- Private keys must remain secure
+
+- Config file permissions set to 600
+
+- Avoid storing passwords
