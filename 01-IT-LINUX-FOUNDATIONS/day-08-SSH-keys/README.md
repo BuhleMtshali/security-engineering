@@ -154,3 +154,4 @@ ssh -J user@bastion user@internal-server
 - Used when accessing a private network through a gateway server.
 
 
+# 🎯 Mini Project: Set Up and Document SSH Config
