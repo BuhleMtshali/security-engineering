@@ -155,3 +155,45 @@ ssh -J user@bastion user@internal-server
 
 
 # 🎯 Mini Project: Set Up and Document SSH Config
+
+## 🧠 Goal
+
+- Create a reusable SSH configuration file that:
+
+    - Uses an alias instead of raw IP
+
+    - Specifies username
+
+    - Uses a private key
+
+    - Optionally sets custom port
+
+    - Makes your life 10x easier
+
+- Then document it like a pro.
+
+## 🛠 Step 1: Locate or Create SSH Config File
+
+- Check if it exists:
+
+```
+ls ~/.ssh
+
+```
+
+### 🎥 Screenshot
+
+![alt text](image.png)
+
+- From this we can deduce that:
+    - ```.ssh``` directory exists ✅
+
+    - But I do not currently have:
+
+        - a config file
+
+        - a private key like id_rsa or id_ed25519
+
+        - known_hosts
+
+        - authorized_keys
