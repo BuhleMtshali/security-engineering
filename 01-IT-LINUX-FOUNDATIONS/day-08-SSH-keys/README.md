@@ -112,3 +112,45 @@ ssh-keygen -t rsa -b 4096
 
 ## 📂 Important SSH Files
 
+| File                     | Purpose                    |
+| ------------------------ | -------------------------- |
+| `~/.ssh/id_rsa`          | Private key                |
+| `~/.ssh/id_rsa.pub`      | Public key                 |
+| `~/.ssh/authorized_keys` | Allowed keys on server     |
+| `~/.ssh/known_hosts`     | Stores server fingerprints |
+| `~/.ssh/config`          | User SSH configuration     |
+| `/etc/ssh/ssh_config`    | System-wide SSH config     |
+
+
+## 🌉 Port Forwarding
+
+### Local Port Forwarding
+
+```
+ssh -L 3000:localhost:3000 user@host
+
+```
+
+### Remote Port Forwarding
+
+```
+ssh -R 9090:localhost:3000 user@host
+
+```
+
+### Dynamic Port Forwarding (SOCKS Proxy)
+
+```
+ssh -D 1080 user@host
+
+```
+
+### 🧭 Jump Host Connection
+
+```
+ssh -J user@bastion user@internal-server
+
+```
+- Used when accessing a private network through a gateway server.
+
+
