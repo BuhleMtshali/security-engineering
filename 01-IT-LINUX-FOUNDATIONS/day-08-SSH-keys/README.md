@@ -53,3 +53,62 @@
 | `-S ctl_path`             | Specify control socket for connection sharing            | `ssh -S ~/.ssh/control user@host`      |
 | `-Q query_option`         | Query supported algorithms                               | `ssh -Q cipher`                        |
 | `-w local_tun:remote_tun` | Create VPN tunnel                                        | `ssh -w 0:1 user@host`                 |
+
+## 🛠️ Basic SSH Usage
+
+1. 🛠️ Basic SSH Usage
+
+```
+ssh user@host
+
+```
+
+2. ssh user@host
+
+```
+
+ssh -p 2222 user@host
+
+```
+
+3. Use a specific private key
+
+```
+ssh -i ~/.ssh/id_rsa user@host
+
+```
+
+4. Debug connection issues
+
+```
+ssh -vvv user@host
+
+```
+
+## 🔑 SSH Key Authentication
+
+### Generate SSH key pair
+
+```
+ssh-keygen -t rsa -b 4096
+
+```
+
+- Files created:
+
+    - ```~/.ssh/id_rsa``` → Private key (keep secret)
+
+    - ```~/.ssh/id_rsa.pub``` → Public key (share with server)
+
+
+### Add public key to server
+
+- Append public key to:
+
+```
+~/.ssh/authorized_keys
+
+```
+
+## 📂 Important SSH Files
+
