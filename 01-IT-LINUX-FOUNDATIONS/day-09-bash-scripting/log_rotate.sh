@@ -30,3 +30,19 @@ sudo nano /etc/logrotate.d/boot-log-mini
     missingok
     notifempty
 }
+
+# 🧪 Step 4: Test Your Configuration
+
+# Now force log rotation:
+
+sudo logrotate -f /etc/logrotate.conf
+
+# 🔎 Step 5: Check the Result
+
+# Look at the logs again:
+ls /var/log | grep boot
+
+# You should see something like:
+boot.log
+boot.log.1
+boot.log.2.gz
