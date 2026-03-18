@@ -228,7 +228,7 @@ This simulates a **real-world development workflow** used in teams.
 
 ## 1️⃣ Version Control
 
-Git tracks changes in files over time, allowing developers to:
+```Git``` tracks changes in files over time, allowing developers to:
 
 * Revisit previous versions
 * Collaborate safely
